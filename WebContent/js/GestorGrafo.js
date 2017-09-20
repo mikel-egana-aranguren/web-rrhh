@@ -75,7 +75,7 @@ function crearGrafo(data) {
             "r": 15,
             "fill": "#ccc",
             "stroke": "#000000"
-        });
+        }).call(force.drag);
 
     var rectangle = svg.append("svg:g").selectAll("rectangle").data(d3.values(literales))
         .enter().append("svg:rect").attr("class", function(d) {
